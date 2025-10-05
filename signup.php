@@ -95,11 +95,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-light bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.php">Cravings Site</a>
             <div class="d-flex">
-                <a href="admin.php" class="btn btn-outline-dark me-2">Admin</a>
+                <a href="admin.php" class="btn btn-outline-light me-2">Admin</a>
                 <a href="vendor.php" class="btn btn-outline-primary me-2">Vendor</a>
                 <a href="login.php" class="btn btn-success">Login</a>
             </div>

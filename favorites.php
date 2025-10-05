@@ -31,7 +31,7 @@ $result = $stmt->get_result();
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-light shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
     <div class="container">
         <a class="navbar-brand fw-bold" href="index.php">Cravings Site</a>
         <div class="d-flex">

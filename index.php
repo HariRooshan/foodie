@@ -73,7 +73,10 @@ $result = $stmt->get_result();
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Cravings Site</a>
             <div class="d-flex">
-                <?php if (isset($_SESSION['user_id'])): ?>
+                <?php if (isset($_SESSION['admin_id'])): ?>
+                    <a href="dashboard_admin.php" class="btn btn-warning me-2">Admin Dashboard</a>
+                    <a href="logout_admin.php" class="btn btn-danger">Logout</a>
+                <?php elseif (isset($_SESSION['user_id'])): ?>
                     <a href="index.php" class="btn btn-success me-2">Dashboard</a>
                     <a href="orders.php" class="btn btn-outline-primary me-2">My Orders</a>
                     <a href="favorites.php" class="btn btn-outline-warning me-2">Favorites</a>
