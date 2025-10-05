@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 90vh;
+            padding: 4rem 0;
         }
         .signup-card {
             background: #fff;
