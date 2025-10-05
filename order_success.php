@@ -65,7 +65,7 @@ body { background: #f8f9fa; }
 </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-light shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
 <div class="container">
     <a class="navbar-brand fw-bold" href="#">Cravings Site</a>
     <div class="d-flex">

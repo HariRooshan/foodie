@@ -69,7 +69,7 @@ $result = $stmt->get_result();
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Cravings Site</a>
             <div class="d-flex">
@@ -100,7 +100,7 @@ $result = $stmt->get_result();
     </div>
 
     <!-- Food Grid -->
-    <div class="container">
+    <div class="container" style="margin-bottom: 2rem;">
         <div class="row g-4">
             <?php while ($row = $result->fetch_assoc()): ?>
                 <div class="col-md-4 col-lg-3">
