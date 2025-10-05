@@ -120,8 +120,44 @@ body { background: #f8f9fa; }
     </div>
 </div>
 <div class="invoice-footer">
+    <div class="d-flex justify-content-center mb-2">
+        <button id="downloadPdf" class="btn btn-primary me-2">Download Invoice as PDF</button>
+        <a href="index.php" class="btn btn-outline-secondary">Back to Home</a>
+    </div>
     <p>Thank you for ordering with Cravings! 🍴</p>
 </div>
 </div>
 </body>
+<!-- html2pdf (bundled) for client-side PDF generation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+<script>
+document.getElementById('downloadPdf').addEventListener('click', function () {
+    var btn = this;
+    btn.disabled = true;
+    btn.innerText = 'Preparing PDF...';
+
+    // Select the invoice card element
+    var element = document.querySelector('.invoice-card');
+
+    var opt = {
+        margin:       10,
+        filename:     'invoice_order_<?= $order_id ?>.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2, useCORS: true },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+
+    // Generate the PDF
+    html2pdf().set(opt).from(element).save().then(function () {
+        btn.disabled = false;
+        btn.innerText = 'Download Invoice as PDF';
+    }).catch(function (err) {
+        console.error(err);
+        alert('Failed to generate PDF. Please try again.');
+        btn.disabled = false;
+        btn.innerText = 'Download Invoice as PDF';
+    });
+});
+</script>
+</html>
 </html>
