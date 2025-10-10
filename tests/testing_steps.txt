@@ -1,0 +1,7 @@
+install node 
+In powershell, go to project directory
+npm init -y (creates package.json file)
+npm install playwright --save-dev (installs playwright)
+npx playwright install chromium (install chromium browser component)
+
+command to run - node .\test\file_name.js

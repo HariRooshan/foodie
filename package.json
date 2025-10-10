@@ -1,0 +1,26 @@
+{
+  "name": "foodie",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HariRooshan/foodie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HariRooshan/foodie/issues"
+  },
+  "homepage": "https://github.com/HariRooshan/foodie#readme",
+  "description": "",
+  "devDependencies": {
+    "playwright": "^1.56.0"
+  }
+}
